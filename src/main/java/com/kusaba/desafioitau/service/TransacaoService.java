@@ -3,6 +3,7 @@ package com.kusaba.desafioitau.service;
 import com.kusaba.desafioitau.domain.Transacao;
 import com.kusaba.desafioitau.dto.TransacaoRequest;
 import com.kusaba.desafioitau.service.validation.Validacao;
+import lombok.Getter;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -16,6 +17,8 @@ import java.util.List;
 public class TransacaoService {
 
     // Criando uma lista para simular o armazenamento em memória das nossas transações.
+    // Utilizando a anotação Getter do Lombok para possibilitar o acesso a nossa lista.
+    @Getter
     private final List<Transacao> transacoes = new ArrayList<>();
 
     // Criando uma lista de validações.
