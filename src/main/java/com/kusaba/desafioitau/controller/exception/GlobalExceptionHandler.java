@@ -10,8 +10,6 @@ import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import java.util.Map;
-
 // Classe global para tratamento de todas as exceções da minha aplicação.
 @RestControllerAdvice
 public class GlobalExceptionHandler {
